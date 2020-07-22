@@ -15,18 +15,18 @@
 -20200311
 
 ## 目录介绍
-
+```
 |-build       
 |-config            // webpack配置
   |-base.conf.js   
   |-dev.conf.js   
-  |-pro.conf.js   
+  |-pro.conf.js     
 |-public
 |-server            // server端渲染文件
   |-app.ts          // 放置浏览器和服务端通用逻辑
   |-clientRouter.ts // 在此文件中包含了把服务端路由匹配到react路由的逻辑
   |-ignore.ts   
-  |-index.ts         
+  |-index.ts            
 |-src
   |-app          // 放置浏览器和服务端通用逻辑
   |-assets       // 静态文件
@@ -40,3 +40,4 @@
   |-assets  
   |-assets
 |-test          // 测试
+```
