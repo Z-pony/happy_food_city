@@ -14,4 +14,29 @@
 其实会python的话，应该可以直接爬取数据，但我现在想巩固node的功能，所以想再去录入的方式，之后想学python了，再考虑爬取数据的方式
 -20200311
 
-## less3.0的版本以上，antd引入样式，会报错
+## 目录介绍
+
+|-build       
+|-config            // webpack配置
+  |-base.conf.js   
+  |-dev.conf.js   
+  |-pro.conf.js   
+|-public
+|-server            // server端渲染文件
+  |-app.ts          // 放置浏览器和服务端通用逻辑
+  |-clientRouter.ts // 在此文件中包含了把服务端路由匹配到react路由的逻辑
+  |-ignore.ts   
+  |-index.ts         
+|-src
+  |-app          // 放置浏览器和服务端通用逻辑
+  |-assets       // 静态文件
+  |-components   // 公共组件
+  |-pages        // 页面组件
+  |-routes       // 路由配置文件
+  |-index.tsx    // 入口文件  
+  |-assets  
+  |-assets  
+  |-assets  
+  |-assets  
+  |-assets
+|-test          // 测试
