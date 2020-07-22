@@ -34,10 +34,5 @@
   |-pages        // 页面组件
   |-routes       // 路由配置文件
   |-index.tsx    // 入口文件  
-  |-assets  
-  |-assets  
-  |-assets  
-  |-assets  
-  |-assets
 |-test          // 测试
 ```
