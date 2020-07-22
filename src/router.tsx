@@ -10,19 +10,19 @@ import Login from 'src/pages/login/index';
 
 
 export default function RouterConfig({ history }) { // 路由配置
-  return (
-    <Router history={history}>
-      <Switch>
-        <Route
-          component={Login}
-          exact
-          path="/"
-        />
-        <Route
-          component={Home}
-          path="/app"
-        />
-      </Switch>
-    </Router>
-  );
+    return (
+        <Router history={history}>
+            <Switch>
+                <Route
+                    component={Login}
+                    exact
+                    path="/"
+                />
+                <Route
+                    component={Home}
+                    path="/app"
+                />
+            </Switch>
+        </Router>
+    );
 }

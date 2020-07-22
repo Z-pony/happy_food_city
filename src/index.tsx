@@ -2,7 +2,7 @@ import dva from 'dva';
 import createhistory from 'history/createBrowserHistory';
 
 const app = dva({
-  history: createhistory(),
+    'history': createhistory()
 });
 
 app.router(require('./router').default);
