@@ -52,6 +52,7 @@
     "html-webpack-plugin": "^3.2.0",
     "less-loader": "^5.0.0",
     "postcss-loader": "^3.0.0",
+    "postcss-plugin-bem": "^1.0.4",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
     "react-router-dom": "^5.1.2",

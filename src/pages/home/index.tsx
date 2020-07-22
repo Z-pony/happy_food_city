@@ -4,6 +4,10 @@ export default class App extends React.Component {
   onChange = () => { };
 
   render() {
-      return <div className="app">222</div>;
+      return (
+          <div className="app">
+              1111
+          </div>
+      );
   }
 }
