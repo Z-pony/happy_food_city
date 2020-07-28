@@ -252,6 +252,7 @@ module.exports = {
     "react/no-deprecated": 1, //不使用弃用的方法
     "react/jsx-equals-spacing": 2, //在JSX属性中强制或禁止等号周围的空格
     "jsx-control-statements/jsx-use-if-tag": 0,
+    "react/destructuring-assignment": 0,
     "react/prefer-stateless-function": [0],
     "react/jsx-filename-extension": [
       "error",
