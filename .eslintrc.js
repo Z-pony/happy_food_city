@@ -254,6 +254,7 @@ module.exports = {
     "jsx-control-statements/jsx-use-if-tag": 0,
     "react/destructuring-assignment": 0,
     "react/prefer-stateless-function": [0],
+    "react/jsx-props-no-spreading": 0,
     "react/jsx-filename-extension": [
       "error",
       {

@@ -1,24 +1,36 @@
 import * as React from 'react';
-import { Router, Route, Switch } from 'dva/router';
+import {
+    BrowserRouter as Router, Route, Switch, IndexRoute
+} from 'react-router-dom';
 // import PropTypes from 'prop-types';
 import APP from 'src/pages/app';
 import 'src/styles/index.less';
 // import { SmileTwoTone } from 'x@ant-design/icons';
-// import { Button } from 'antd';
+// import { Button } from 'antd';index
 
 // import "src/assets/css/app.less";
+import NotFound from 'src/pages/notFound/index';
 
-
-export default function RouterConfig({ history }) { // 路由配置
+export default function RouterConfig() { // 路由配置
     return (
-        <Router history={history}>
-            <Switch>
-                <Route
-                    component={APP}
-                    exact
-                    path="/"
-                />
-            </Switch>
+        <Router>
+
+            <Route
+                exact
+                path="/a"
+                component={NotFound}
+            >
+            </Route>
+            <Route
+                component={APP}
+                exact
+                path="/b"
+            />
+
+
+            {/* <Route render={() => <Redirect to={`${prefixPath}/tips`} />} /> */}
+
+
         </Router>
     );
 }

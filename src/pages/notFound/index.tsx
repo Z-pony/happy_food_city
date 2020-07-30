@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 
-export default class App extends React.Component {
+export default class NotFound extends React.Component {
   onChange = () => { };
 
   render() {
       return (
           <div className="zpony_city">
-              222
+              not found
           </div>
       );
   }

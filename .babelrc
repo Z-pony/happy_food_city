@@ -1,0 +1,24 @@
+// .babelrc
+
+
+{
+  "presets": [
+    ["@babel/preset-env",
+      {
+        "useBuiltIns": "usage",    // 只编译需要编译的代码
+        "corejs": "3.0.1"
+      }
+    ],  // 将ES6语法转换为es5
+    [
+      "@babel/preset-react",
+      {
+        "pragma": "dom", // default pragma is React.createElement
+        "pragmaFrag": "DomFrag", // default is React.Fragment
+        "throwIfNamespace": false // defaults to true
+      }
+    ]
+  ],
+  
+  "plugins": ["react-hot-loader/babel"]
+
+}

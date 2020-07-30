@@ -23,7 +23,7 @@ const asyncComponent = (importComponent) => {
         render() {
             let C = this.state.component;
 
-            return C ? <C /> : <Spin spinning />;
+            return C ? <C /> : <Spin spinning size="large" />;
         }
     }
     return AsyncComponent;
