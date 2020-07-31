@@ -1,14 +1,14 @@
 export const prefixPath = '/';
 export default () => [
     {
-        'link':`${prefixPath}/app`,
+        'link':`${prefixPath}`,
         'title': '首页',
         'component': () => import('src/pages/home'),
         'show': true
     },
     {
         'link':`${prefixPath}publish`,
-        'title': '首页',
+        'title': '发布',
         'component': () => import('src/pages/publish'),
         'show': true
     },
@@ -18,4 +18,5 @@ export default () => [
         'component': () => import('src/pages/city'),
         'show': true
     }
+
 ];

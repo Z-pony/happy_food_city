@@ -17,8 +17,8 @@ const config = {
         'port': '8082',
         'hot': true, // 热更新
         'open': true, // 自动打开浏览器
-        'contentBase': DIST_PATH // 告诉服务器从哪个目录中提供内容，只有在你需要提供静态文件时才需要
-        // 'historyApiFallback': true // 所有404都连接到index.html
+        'contentBase': DIST_PATH, // 告诉服务器从哪个目录中提供内容，只有在你需要提供静态文件时才需要
+        'historyApiFallback': true // 所有404都连接到index.html
     },
     'module': {
         'rules': [

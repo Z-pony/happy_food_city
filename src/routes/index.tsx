@@ -12,23 +12,22 @@ export default class ContentRoutes extends Component {
     render() {
         return (
             <Switch>
-                <Route
-                    exact
-                    path="
-                    /"
-                />
-
                 {
                     routerConfig().map((item) => !!item.show && (
                         <Route
                             key={item.link}
-                            component={asyncComponent(item.component)}
                             exact
-                            link={item.link}
+                            component={asyncComponent(item.component)}
+                            path={item.link}
                         />
                     ))
                 }
+                <Route
 
+                    exact
+                    component={asyncComponent(() => import('src/pages/notFound'))}
+                    path="/*"
+                />
             </Switch>
         );
     }

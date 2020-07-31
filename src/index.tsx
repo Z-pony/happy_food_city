@@ -12,15 +12,13 @@ const stores = { };
 promiseFinally.shim();
 ReactDOM.render(
     (
-        // <AppContainer>
-        //     <Router>
-        //         <Provider {...stores}>
-        //             <AllPage />
-        //         </Provider>
-        //     </Router>
-        // </AppContainer>
-        <AllPage />
-
+        <AppContainer>
+            <Router>
+                <Provider {...stores}>
+                    <AllPage />
+                </Provider>
+            </Router>
+        </AppContainer>
     )
     , document.getElementById('root')
 );

@@ -7,7 +7,7 @@ export default class App extends React.Component {
   render() {
       return (
           <div className="zpony_city">
-              333
+              city
           </div>
       );
   }
