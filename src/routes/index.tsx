@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-// import { Route, Switch } from 'dva/router';
 import {
     Switch, Route
 } from 'react-router-dom';
