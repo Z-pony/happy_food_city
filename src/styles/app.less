@@ -12,26 +12,42 @@
             margin: 0 auto;
         }
     }
-    .zpony-wrap{
+    .zpony_wrap{
         width: 1200px;
         margin: 0 auto;
     }
+    
 }
-.zpony_nav_list{
-
-}
-.zpony_nav-item a{
+.zpony_nav_item a{
     display: block;
     height: 80px;
     padding: 0 25px;
-    color: #fff;
+    color: @normalColor;
     box-sizing: border-box;
     line-height: 80px;
-    font-size: 20px;
-    // border-bottom: 5px solid  #e09bc9;
+    font-size: @title;
+    // border-bottom: 5px solid  #e09b
     &:hover, &.active{
-        background: #fff;
-        color: #e09bc9;
-        border-bottom: 3px solid  #7c8cc2;
+        background: @normalColor;
+        color: @mainColor;
+        border-bottom: 3px solid  @subColor;
     }
+}
+.zpony_login_box{
+    height: 80px;
+}
+.zpony_login_btn{
+    display: block;
+    height: 100%; 
+    line-height: 80px;
+    width: 100px;
+    text-align: center;
+    font-size: @title;
+    cursor: pointer;
+    color: @normalColor;
+    background: @subColor;
+    &:hover{
+        background: @minColor;
+    }
+    
 }
