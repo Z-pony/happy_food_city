@@ -18,19 +18,28 @@
     }
     
 }
-.zpony_nav_item a{
-    display: block;
-    height: 80px;
-    padding: 0 25px;
-    color: @normalColor;
-    box-sizing: border-box;
-    line-height: 80px;
-    font-size: @title;
-    // border-bottom: 5px solid  #e09b
-    &:hover, &.active{
-        background: @normalColor;
-        color: @mainColor;
-        border-bottom: 3px solid  @subColor;
+.zpony_nav_item {
+    &.is_checked{
+        a{
+            background: @normalColor;
+            color: @mainColor;
+            border-bottom: 3px solid  @subColor;
+        }
+    }
+    a{
+        display: block;
+        height: 80px;
+        padding: 0 25px;
+        color: @normalColor;
+        box-sizing: border-box;
+        line-height: 80px;
+        font-size: @title;
+        // border-bottom: 5px solid  #e09b
+        &:hover, &.active{
+            background: @normalColor;
+            color: @mainColor;
+            border-bottom: 3px solid  @subColor;
+        }
     }
 }
 .zpony_login_box{
